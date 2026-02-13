@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp Page</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <h1>facebook</h1>
+        <div class ="box"> SignUp to Facebook
+        <div class="input">
+            <input type="text" name="username" placeholder="Username" style="width: 325px;height: 50px;border-radius: 10px;background-color: white;">
+       </div>
+       <div class="input-1">
+            <input type="email" name="email" placeholder="Email ID" style="width: 325px;height: 50px;border-radius: 10px;background-color: white;">
+        </div>
+       <div class="input-1">
+            <input type="password" name="password" placeholder="Password" style="width: 325px;height: 50px;border-radius: 10px;background-color: white;">
+        </div>
+       <div class="input-1">
+            <input type="password" name="conform_password" placeholder="Conform Password" style="width: 325px;height: 50px;border-radius: 10px;background-color: white;">
+        </div>
+
+        <div class="button">
+        <button type="submit" style="font: size 20px; width:330px ;height: 50px; border-radius: 10px; background-color:#1877f2;color: white; font-size: 20px;">Sign Up</button>
+        </div>
+        <div>
+            <a href="#" style="font-size: 15px;padding-right: 10px;">Forgot account?</a>
+            <a href="#" style="font-size: 15px;">Login for Facebook</a>
+        </div>
+        </div>
+
+
+
+    </form>
+<!--    <button type="submit">LogIn</button>-->
+</body>
+
+<style>
+    *{
+    background-color:white ;
+}
+h1{
+    color: #1877f2; ;
+    font-family: 'Noto sans',arial,sans-serif ;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100px;
+}
+.box{
+    background-color: white;
+    text-align:center;
+    font-size: 20px;
+    width: 400px;
+    height: 450px;
+    margin-left: 550px;
+    padding-top: 20px;
+    margin-top: -15px;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px ;
+}
+.input{
+    padding-top: 30px;
+
+
+}
+.input-1{
+    padding-top:10px ;
+
+}
+.button{
+    padding-top: 10px;
+
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:underline;
+}
+</style>
+
+<!--        <label>UserName : </label>-->
+<!--        <input type="text" name="username" placeholder="type ur username"> <br>-->
+<!--        <label>Password : </label>-->
+<!--        <input type="password" name="password" placeholder="type ur password"> <br>-->
+<!--        <label>Conform Password : </label>-->
+<!--        <input type="password" name="conform_password" placeholder="type ur Conform password"> <br>-->
+<!--        <label>Email id : </label>-->
+<!--        <input type="email" name="email" placeholder="type ur email"> <br>-->
+<!--        <button type="submit">Submit</button>-->
+
+
+
+</html>
